@@ -3,8 +3,16 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 <bean id="user" class="main.java.bean.User">
-    <constructor-arg name="name" value="scy">
-    </constructor-arg>
+    <constructor-arg name="name" value="scy"></constructor-arg>
     <constructor-arg name="gender" value="男"></constructor-arg>
 </bean>
+
+    <bean id="role" class="main.java.bean.Role">
+        <constructor-arg name="name" value="管理員"></constructor-arg>
+        <constructor-arg name="id" value="1234"></constructor-arg>
+    </bean>
+
+    <bean id="car" class="main.java.bean.bean2.CarFactory">
+        <property name="carInfo" value="奔驰,100,1000000"></property>
+    </bean>
 </beans>
